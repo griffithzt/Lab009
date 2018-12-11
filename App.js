@@ -24,3 +24,5 @@ app.post('/myPost', function(req, res) {
    console.log(req.body.lastname);
    res.json({"testdata" : "This is data."});
 });
+
+app.use(express.static("public"));
